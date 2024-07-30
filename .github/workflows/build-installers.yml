@@ -47,6 +47,8 @@ jobs:
         if: matrix.os == 'windows-latest'
         run: |
           pip install blosc --no-input --target src/test/resources
+          ls src/test/resources/bin/
+          ls src/test/resources/bin/
           mv src/test/resources/bin/* src/test/resources
       - uses: actions/checkout@v2
       - name: Set up JDK
